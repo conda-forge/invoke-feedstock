@@ -14,7 +14,9 @@ Summary: Pythonic task execution
 Current build status
 ====================
 
-All platforms: [![Circle CI](https://circleci.com/gh/conda-forge/invoke-feedstock.svg?style=shield)](https://circleci.com/gh/conda-forge/invoke-feedstock)
+Linux: [![Circle CI](https://circleci.com/gh/conda-forge/invoke-feedstock.svg?style=shield)](https://circleci.com/gh/conda-forge/invoke-feedstock)
+OSX: [![TravisCI](https://travis-ci.org/conda-forge/invoke-feedstock.svg?branch=master)](https://travis-ci.org/conda-forge/invoke-feedstock)
+Windows: [![AppVeyor](https://ci.appveyor.com/api/projects/status/github/conda-forge/invoke-feedstock?svg=True)](https://ci.appveyor.com/project/conda-forge/invoke-feedstock/branch/master)
 
 Current release info
 ====================
