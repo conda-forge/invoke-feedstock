@@ -33,8 +33,6 @@ test:
     - invoke.vendor
     - invoke.vendor.fluidity
     - invoke.vendor.lexicon
-    - invoke.vendor.yaml2    # [py2k]
-    - invoke.vendor.yaml3    # [py3k]
 
   commands:
     - invoke --help
