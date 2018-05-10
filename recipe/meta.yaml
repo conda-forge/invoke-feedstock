@@ -12,14 +12,15 @@ source:
 build:
   noarch: python
   number: 0
-  script: python setup.py install --single-version-externally-managed --record=record.txt
+  script: python -m pip install . --no-deps --ignore-installed
   entry_points:
     - invoke = invoke.main:program.run
     - inv = invoke.main:program.run
 
 requirements:
   build:
-    - python
+    - pip
+    - python    
     - setuptools
 
   run:
