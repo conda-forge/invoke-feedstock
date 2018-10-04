@@ -10,7 +10,7 @@ source:
   sha256: dc492f8f17a0746e92081aec3f86ae0b4750bf41607ea2ad87e5a7b5705121b7
 
 build:
-  number: 0
+  number: 1000
   script: python -m pip install . --no-deps --ignore-installed
   entry_points:
     - invoke = invoke.main:program.run
