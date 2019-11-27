@@ -10,18 +10,18 @@ source:
   sha256: c52274d2e8a6d64ef0d61093e1983268ea1fc0cd13facb9448c4ef0c9a7ac7da
 
 build:
-  number: 0
-  script: python -m pip install . --no-deps --ignore-installed
+  number: 1
+  noarch: python
+  script: "{{ PYTHON }} -m pip install . -vv"
   entry_points:
     - invoke = invoke.main:program.run
     - inv = invoke.main:program.run
 
 requirements:
-  build:
+  host:
     - pip
-    - python    
+    - python
     - setuptools
-
   run:
     - python
 
@@ -33,8 +33,9 @@ test:
     - invoke.vendor
     - invoke.vendor.fluidity
     - invoke.vendor.lexicon
-    - invoke.vendor.yaml2    # [py2k]
-    - invoke.vendor.yaml3    # [py3k]
+    # Disabled python version related tests as we cannot do this in noarch packages
+    # - invoke.vendor.yaml2
+    # - invoke.vendor.yaml3
 
   commands:
     - invoke --help
