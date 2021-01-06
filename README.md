@@ -5,11 +5,9 @@ Home: http://docs.pyinvoke.org
 
 Package license: BSD-2-Clause
 
-Feedstock license: BSD 3-Clause
+Feedstock license: [BSD-3-Clause](https://github.com/conda-forge/invoke-feedstock/blob/master/LICENSE.txt)
 
 Summary: Pythonic task execution
-
-
 
 Current build status
 ====================
@@ -116,6 +114,5 @@ In order to produce a uniquely identifiable distribution:
 Feedstock Maintainers
 =====================
 
-* [@ivoflipse](https://github.com/ivoflipse/)
 * [@nicoddemus](https://github.com/nicoddemus/)
 
