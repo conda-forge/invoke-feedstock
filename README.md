@@ -9,6 +9,8 @@ Feedstock license: [BSD-3-Clause](https://github.com/conda-forge/invoke-feedstoc
 
 Summary: Pythonic task execution
 
+Development: https://github.com/pyinvoke/invoke
+
 Current build status
 ====================
 
