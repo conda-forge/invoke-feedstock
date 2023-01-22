@@ -1,4 +1,4 @@
-{% set version = "1.7.3" %}
+{% set version = "2.0.0" %}
 
 package:
   name: invoke
@@ -7,7 +7,7 @@ package:
 source:
   fn: invoke-{{ version }}.tar.gz
   url: https://pypi.io/packages/source/i/invoke/invoke-{{ version }}.tar.gz
-  sha256: 41b428342d466a82135d5ab37119685a989713742be46e42a3a399d685579314
+  sha256: 7ab5dd9cd76b787d560a78b1a9810d252367ab595985c50612702be21d671dd7
 
 build:
   number: 0
@@ -20,10 +20,10 @@ build:
 requirements:
   host:
     - pip
-    - python 2.7|>=3.4
+    - python >=3.4
     - setuptools
   run:
-    - python 2.7|>=3.4
+    - python >=3.4
 
 test:
   # Python imports
@@ -34,7 +34,6 @@ test:
     - invoke.vendor.fluidity
     - invoke.vendor.lexicon
     # Disabled python version related tests as we cannot do this in noarch packages
-    # - invoke.vendor.yaml2
     # - invoke.vendor.yaml3
 
   commands:
@@ -51,3 +50,4 @@ about:
 extra:
   recipe-maintainers:
     - nicoddemus
+    - setu4993
