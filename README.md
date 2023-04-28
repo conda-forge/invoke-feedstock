@@ -1,11 +1,11 @@
-About invoke
-============
+About invoke-feedstock
+======================
+
+Feedstock license: [BSD-3-Clause](https://github.com/conda-forge/invoke-feedstock/blob/main/LICENSE.txt)
 
 Home: http://docs.pyinvoke.org
 
 Package license: BSD-2-Clause
-
-Feedstock license: [BSD-3-Clause](https://github.com/conda-forge/invoke-feedstock/blob/main/LICENSE.txt)
 
 Summary: Pythonic task execution
 
