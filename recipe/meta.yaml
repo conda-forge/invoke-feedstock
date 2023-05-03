@@ -1,4 +1,4 @@
-{% set version = "2.1.0" %}
+{% set version = "2.1.1" %}
 
 package:
   name: invoke
@@ -7,7 +7,7 @@ package:
 source:
   fn: invoke-{{ version }}.tar.gz
   url: https://pypi.io/packages/source/i/invoke/invoke-{{ version }}.tar.gz
-  sha256: 277894c57fa2b77f22ed3c7726fb8689773301e4497ccb2a59f19bc7bbbe5b4a
+  sha256: 7dcf054c4626b89713da650635c29e9dfeb8a1dd0a14edc60bd3e16f751292ff
 
 build:
   number: 0
