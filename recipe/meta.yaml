@@ -6,11 +6,11 @@ package:
 
 source:
   fn: invoke-{{ version }}.tar.gz
-  url: https://pypi.io/packages/source/i/invoke/invoke-{{ version }}.tar.gz
+  url: https://pypi.org/packages/source/i/invoke/invoke-{{ version }}.tar.gz
   sha256: ee6cbb101af1a859c7fe84f2a264c059020b0cb7fe3535f9424300ab568f6bd5
 
 build:
-  number: 0
+  number: 1
   noarch: python
   script: {{ PYTHON }} -m pip install . -vv
   entry_points:
@@ -20,13 +20,15 @@ build:
 requirements:
   host:
     - pip
-    - python >=3.6
+    - python {{ python_min }}
     - setuptools
   run:
-    - python >=3.6
+    - python >={{ python_min }}
 
 test:
   # Python imports
+  requires:
+    - python {{ python_min }}
   imports:
     - invoke
     - invoke.parser
